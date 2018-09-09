@@ -25,7 +25,12 @@ Start your virtual machine.
 
 7. In your virtual machine icon you will see its IP address starting 147. Open Putty and connect to address root@IP_address (e.g. root@147.251.255.43).
 
-8. If your login was successful, make a new directory by typing:
+8. If your login was successful, update and upgrade software by typing:
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+make a new directory by typing:
 ```
 mkdir install
 ```
@@ -50,7 +55,6 @@ gmx -h
 ```
 
 Logout by typing `exit`. Close your virtual machine by pressing power off button in your virtual machine icon (send power off signal). Sign out from Open Nebula.
-
 
 
 
