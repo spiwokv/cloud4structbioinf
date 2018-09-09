@@ -49,7 +49,8 @@ You can test it by typing:
 gmx -h
 ```
 
-Logout by typing `exit`. Close your virtual machine by pressing power off button in your virtual machine icon (send power off signal).
+Logout by typing `exit`. Close your virtual machine by pressing power off button in your virtual machine icon (send power off signal). Sign out from Open Nebula.
+
 
 
 
