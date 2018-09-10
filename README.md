@@ -21,6 +21,7 @@ Login with your UCT login and password. SOME SPECIAL INSTRUCTIONS?
 - image: CERIT-SC-Debian 9
 - settings: 2 GB RAM, 1 CPU, 1 VCPU, disk 0: 10 GB, disk 1: 8 GB
 - networks: cerit-sc-cloud-private1 + cerit-sc-cloud-public253
+
 Start your virtual machine.
 
 7. In your virtual machine icon you will see its IP address starting 147. Open Putty and connect to address root@IP_address (e.g. root@147.251.255.43).
