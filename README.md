@@ -1,5 +1,7 @@
 # Using Metacentrum cloud for Structural Bioinformatics course
 
+How to setup virtual machine in cloud available here [CLOUDSETUP.md](https://github.com/spiwokv/cloud4structbioinf/blob/master/CLOUDSETUP.md)
+
 1. Open Putty and enter an address *your_login*`@`*IP_address*. Your login and IP address will be given to you at
 the first lesson. Type password when asked (password does not show on the screen while typing!!!). The password will
 be given to you.
