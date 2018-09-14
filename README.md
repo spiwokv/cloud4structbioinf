@@ -21,6 +21,7 @@ Next, in your home go to file `.bashrc`, pres F4 to edit, go to the end of file 
 ```
 alias mc=". /usr/share/mc/bin/mc-wrapper.sh"
 ```
+Save by F2 and close by F10. Close Midnight Commander by F10.
 
 4. Exit by typing:
 ```
