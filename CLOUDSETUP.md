@@ -1,7 +1,5 @@
 # Step by step setup of Metacentrum cloud for Structural Bioinformatics course
 
-How to setup VM on cloud available here [CLOUDSETUP.md](https://github.com/spiwokv/cloud4structbioinf/blob/master/CLOUDSETUP.md)
-
 1. Register to Metacentrum at:
 https://metavo.metacentrum.cz/en/application/index.html (English version) or
 https://metavo.metacentrum.cz/cs/application/index.html (Czech version).
