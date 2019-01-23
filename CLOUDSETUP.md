@@ -3,11 +3,11 @@
 1. Register to Metacentrum at:
 https://metavo.metacentrum.cz/en/application/index.html (English version) or
 https://metavo.metacentrum.cz/cs/application/index.html (Czech version).
-Login with your UCT login and password. SOME SPECIAL INSTRUCTIONS?
+Login with your UCT login and password.
 
 2. Register to Cloud:
 https://perun.metacentrum.cz/fed/registrar/?vo=meta&group=metacloud.
-Login with your UCT login and password. SOME SPECIAL INSTRUCTIONS?
+Login with your UCT login and password.
 
 3. Prepare your access key:
 - Download puttygen.exe from https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html (chose correct version, either 32 of 64 bit)
