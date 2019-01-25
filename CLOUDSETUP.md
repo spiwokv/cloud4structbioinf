@@ -48,12 +48,46 @@ env KEY_MODELLER=XXXXXX dpkg -i modeller_9.20-1_amd64.deb
 
 Install Gromacs by typing:
 ```
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install gromacs
 ```
-You can test it by typing:
+You may skip the first two lines if you install Gromacs immediatelly after Modeller. You can test it by typing:
 ```
 gmx -h
 ```
+
+Install R by typing:
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install r-base
+```
+You can try by typing:
+```
+R
+```
+(type `q()` and select `n` to exit).
+
+To install PoVRay type:
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install libboost-thread-dev
+sudo apt install libtiff-dev
+mkdir ~/install
+cd ~/install
+mkdir povray
+cd povray
+git clone
+cd unix/
+./prebuild.sh
+cd ../
+./configure COMPILED_BY="your e-mail"
+make
+sudo make install
+```
+Replace "your e-mail" by your e-mail.
 
 Logout by typing `exit`. Close your virtual machine by pressing power off button in your virtual machine icon (send power off signal). Sign out from Open Nebula.
 
