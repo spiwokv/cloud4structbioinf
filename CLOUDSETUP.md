@@ -28,8 +28,8 @@ Start your virtual machine.
 
 8. If your login was successful, update and upgrade software by typing:
 ```
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade
 ```
 make a new directory by typing:
 ```
@@ -48,9 +48,9 @@ env KEY_MODELLER=XXXXXX dpkg -i modeller_9.20-1_amd64.deb
 
 Install Gromacs by typing:
 ```
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install gromacs
+sudo apt update
+sudo apt upgrade
+sudo apt install gromacs
 ```
 You may skip the first two lines if you install Gromacs immediatelly after Modeller. You can test it by typing:
 ```
