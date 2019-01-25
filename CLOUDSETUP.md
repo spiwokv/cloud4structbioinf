@@ -108,7 +108,7 @@ sudo make install
 ````
 You can test by typing:
 ```
-mplayer --help
+mplayer
 ```
 
 Logout by typing `exit`. Close your virtual machine by pressing power off button in your virtual machine icon
