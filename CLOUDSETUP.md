@@ -87,9 +87,32 @@ cd ../
 make
 sudo make install
 ```
-Replace "your e-mail" by your e-mail.
+Replace "your e-mail" by your e-mail. You can try by typing:
+```
+povray -h
+```
 
-Logout by typing `exit`. Close your virtual machine by pressing power off button in your virtual machine icon (send power off signal). Sign out from Open Nebula.
+To install Mplayer type:
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install yasm
+cd ~/install
+mkdir mplayer
+wget http://www.mplayerhq.hu/MPlayer/releases/mplayer-export-snapshot.tar.bz2
+tar xvjf mplayer-export-snapshot.tar.bz2
+cd mplayer-export-2019-01-25 # <-replace by correct date
+./configure # press enter when asked
+make
+sudo make install
+````
+You can test by typing:
+```
+mplayer --help
+```
+
+Logout by typing `exit`. Close your virtual machine by pressing power off button in your virtual machine icon
+(send power off signal). Sign out from Open Nebula.
 
 
 
