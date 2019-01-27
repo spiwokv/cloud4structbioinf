@@ -28,8 +28,8 @@ Start your virtual machine.
 
 8. If your login was successful, update and upgrade software by typing:
 ```
-sudo apt update
-sudo apt upgrade
+apt update
+apt upgrade # press y when asked
 ```
 make a new directory by typing:
 ```
@@ -48,9 +48,9 @@ env KEY_MODELLER=XXXXXX dpkg -i modeller_9.20-1_amd64.deb
 
 Install Gromacs by typing:
 ```
-sudo apt update
-sudo apt upgrade
-sudo apt install gromacs
+apt update
+apt upgrade # press y when asked
+apt install gromacs # press y when asked
 ```
 You may skip the first two lines if you install Gromacs immediatelly after Modeller. You can test it by typing:
 ```
@@ -59,9 +59,9 @@ gmx -h
 
 Install R by typing:
 ```
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install r-base
+apt update
+apt upgrade # press y when asked
+apt install r-base # press y when asked
 ```
 You can try by typing:
 ```
@@ -71,21 +71,22 @@ R
 
 To install PoVRay type:
 ```
-sudo apt update
-sudo apt upgrade
-sudo apt install libboost-thread-dev
-sudo apt install libtiff-dev
-mkdir ~/install
+apt update
+apt upgrade # press y when asked
+apt install git # press y when asked
+apt install autoconf # press y when asked
+apt install libboost-thread-dev # press y when asked
+apt install libtiff-dev # press y when asked
 cd ~/install
 mkdir povray
 cd povray
-git clone
-cd unix/
+git clone https://github.com/POV-Ray/povray.git 
+cd povray/unix/
 ./prebuild.sh
-cd ../
+cd ..
 ./configure COMPILED_BY="your e-mail"
 make
-sudo make install
+make install
 ```
 Replace "your e-mail" by your e-mail. You can try by typing:
 ```
@@ -94,21 +95,52 @@ povray -h
 
 To install Mplayer type:
 ```
-sudo apt update
-sudo apt upgrade
-sudo apt install yasm
+apt update
+apt upgrade # press y when asked
+apt install yasm # press y when asked
 cd ~/install
 mkdir mplayer
+cd mplayer
 wget http://www.mplayerhq.hu/MPlayer/releases/mplayer-export-snapshot.tar.bz2
 tar xvjf mplayer-export-snapshot.tar.bz2
 cd mplayer-export-2019-01-25 # <-replace by correct date
 ./configure # press enter when asked
 make
-sudo make install
+make install
 ````
 You can test by typing:
 ```
 mplayer
+```
+
+To install Gromacs patched by Plumed, compile Plumed, patch Gromacs by Plumed and compile Gromacs:
+```
+apt update
+apt upgrade # press y when asked
+apt install cmake # press y when asked
+apt install fftw3 fftw3-dev # press y when asked
+cd ~/install
+mkdir plumed
+cd plumed/
+git clone https://github.com/plumed/plumed2.git
+cd plumed2/
+make
+make install
+cd ..
+mkdir gromacs
+wget http://ftp.gromacs.org/pub/gromacs/gromacs-2018.4.tar.gz
+tar -xvzf gromacs-2018.4.tar.gz 
+cd gromacs-2018.4
+plumed patch -p
+mkdir build
+cd build
+cmake .. -DGMX_DEFAULT_SUFFIX=OFF -DGMX_BINARY_SUFFIX="_plumed"
+make
+make install
+```
+You can test by typing:
+```
+/usr/local/gromacs/bin/gmx_plumed -h
 ```
 
 Logout by typing `exit`. Close your virtual machine by pressing power off button in your virtual machine icon
